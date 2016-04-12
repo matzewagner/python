@@ -1,0 +1,105 @@
+Last login: Mon Nov  2 16:32:53 on ttys000
+matze:~ matze$ /Users/matze/repos/API_Cpp/libsofa/build/macos/build/Release/sofaexamples.build/Objects-normal/x86_64/sofaexamples ; exit;
+netCDF               = yes
+SOFA                 = yes
+SimpleFreeFieldHRIR  = yes
+SimpleFreeFieldSOS   = no
+SimpleHeadphoneIR    = no
+GeneralFIR           = no
+GeneralTF            = no
+
+Global Attributes:
+	APIName                        = ARI SOFA API for Matlab/Octave
+	APIVersion                     = 0.4.0
+	ApplicationName                = ARI converter
+	ApplicationVersion             = 
+	AuthorContact                  = Prof. V. Ralph Algazi
+CIPIC Interface Laboratory
+2343 Academic Surge
+1 Shields Avenue
+University of California
+Davis, CA 95616-8553 USA
+	Comment                        = Converted from the original file format by Piotr Majdak (piotr@majdak.com), Acoustics Research Institute, OeAW
+	Conventions                    = SOFA
+	DataType                       = FIR
+	DatabaseName                   = CIPIC
+	DateCreated                    = 2012-10-30 17:57:52
+	DateModified                   = 2014-03-20 16:31:33
+	History                        = Converted from the CIPIC database
+	License                        = This is a copy of the original license: The Regents of the University of California hereby grant users permission to reproduce and/or use materials available therein for any purpose- educational, research or commercial. However, each reproduction of any part of the materials must include the copyright notice, if it is present. In addition, as a courtesy, if these materials are used in published research, this use should be acknowledged in the publication. If these materials are used in the development of commercial products, the Regents of the University of California request that written acknowledgment of such use be sent to: CIPIC- Center for Image Processing and Integrated Computing University of California 1 Shields Avenue Davis, CA 95616-8553
+	ListenerShortName              = subject_020
+	Organization                   = The Regents of the University of California
+	Origin                         = http://interface.cipic.ucdavis.edu/sound/hrtf.html
+	References                     = V. R. Algazi, R. O. Duda, D. M. Thompson and C. Avendano, "The CIPIC HRTF Database," Proc. 2001 IEEE Workshop on Applications of Signal Processing to Audio and Electroacoustics, pp. 99-102, Mohonk Mountain House, New Paltz, NY, Oct. 21-24, 2001
+	RoomType                       = free field
+	SOFAConventions                = SimpleFreeFieldHRIR
+	SOFAConventionsVersion         = 0.4
+	Title                          = HRTF (hrir_final)
+	Version                        = 0.6
+
+Dimensions:
+	C = 3
+	E = 1
+	I = 1
+	M = 1250
+	N = 200
+	R = 2
+
+Variables:
+	Data.Delay
+		Datatype:                     double
+		Dimensions:                   I,R
+		Size:                         1 x 2
+	Data.IR
+		Datatype:                     double
+		Dimensions:                   M,R,N
+		Size:                         1250 x 2 x 200
+	Data.SamplingRate
+		Datatype:                     double
+		Dimensions:                   I
+		Size:                         1
+		Attributes:                   1
+			Units                          = hertz
+	EmitterPosition
+		Datatype:                     double
+		Dimensions:                   E,C,I
+		Size:                         1 x 3 x 1
+		Attributes:                   1 x 3 x 1
+			Type                           = cartesian
+			Units                          = meter
+	ListenerPosition
+		Datatype:                     double
+		Dimensions:                   I,C
+		Size:                         1 x 3
+		Attributes:                   1 x 3
+			Type                           = cartesian
+			Units                          = meter
+	ListenerUp
+		Datatype:                     double
+		Dimensions:                   I,C
+		Size:                         1 x 3
+	ListenerView
+		Datatype:                     double
+		Dimensions:                   I,C
+		Size:                         1 x 3
+		Attributes:                   1 x 3
+			Type                           = cartesian
+			Units                          = meter
+	ReceiverPosition
+		Datatype:                     double
+		Dimensions:                   R,C,I
+		Size:                         2 x 3 x 1
+		Attributes:                   2 x 3 x 1
+			Type                           = cartesian
+			Units                          = meter
+	SourcePosition
+		Datatype:                     double
+		Dimensions:                   M,C
+		Size:                         1250 x 3
+		Attributes:                   1250 x 3
+			Type                           = spherical
+			Units                          = degree, degree, meter
+logout
+
+[Process completed]
+
